@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<ul>
+{{#each restaurants}}
+  <li>
+    <a href="/restaurant/{{this.id}}">{{this.name}}</a> - {{this.cuisine}} 
+  </li>
+{{/each}}
+</ul>
+<br>
+<a href="/">Back to Home</a>
