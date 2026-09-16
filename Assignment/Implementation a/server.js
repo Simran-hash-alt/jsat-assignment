@@ -74,8 +74,7 @@ const server = http.createServer((req, res) => {
     return res.end(`
       <h1>Order Details #${order.id}</h1>
       <p><strong>Customer:</strong> ${order.customer}</p>
-      <p><strong>Restaurant:</strong> ${restaurant ? restaurant.name : 'Unknown'}</p>
-      <p><strong>Total:</strong> $${order.total.toFixed(2)}</p>
+      <p><strong>Restaurant:</strong> ${restaurant ? restaurant.name : 'Unknown'}</p>       <p><strong>Total:</strong> $${order.total.toFixed(2)}</p>
       <p><strong>Status:</strong> ${order.status}</p>
       <a href="/">Back to Home</a>
     `);
